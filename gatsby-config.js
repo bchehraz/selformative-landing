@@ -14,4 +14,5 @@ module.exports = {
     },
     'gatsby-transformer-remark',
   ],
+  pathPrefix: `/blog`, // this is for adding the site to github pages
 };
