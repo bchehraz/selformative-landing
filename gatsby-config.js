@@ -14,5 +14,5 @@ module.exports = {
     },
     'gatsby-transformer-remark',
   ],
-  pathPrefix: `/selformative`, // this is for adding the site to github pages
+  pathPrefix: `/`, // this is for adding the site to github pages
 };
