@@ -1,5 +1,5 @@
 ---
-path: "/another-one"
+path: "/how-to-learn-a-new-skill"
 date: "2017-03-23T15:54:33.962Z"
 title: "How to Learn a New Skill"
 ---
