@@ -1,6 +1,6 @@
 ---
 path: "/how-to-learn-a-new-skill"
-date: "2017-03-23T15:54:33.962Z"
+date: "2018-03-23T15:54:33.962Z"
 title: "How to Learn a New Skill"
 ---
 Learning something new is as easy as pie... or is it?
