@@ -20,9 +20,13 @@
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---how-to-learn-a-new-skill": [
+      "path---how-to-learn-a-new-skill-22fc3c10b428f7a1a872.js",
+      "path---how-to-learn-a-new-skill-22fc3c10b428f7a1a872.js.map"
+    ],
     "path---index": [
-      "path---index-115b003f546948886d5b.js",
-      "path---index-115b003f546948886d5b.js.map"
+      "path---index-aba894681e7a7e1525d2.js",
+      "path---index-aba894681e7a7e1525d2.js.map"
     ],
     "path---hello-world": [
       "path---hello-world-b641ffe50d2f93bb8324.js",
@@ -38,10 +42,6 @@
       "commons-37e7ec241aad23eaba66.js.map",
       "build-js-styles.css.map"
     ],
-    "path---another-one": [
-      "path---another-one-c784e76ebf9863a7e7c4.js",
-      "path---another-one-c784e76ebf9863a7e7c4.js.map"
-    ],
     "path---404-html": [
       "path---404-html-a0e39f21c11f6a62c5ab.js",
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
@@ -51,9 +51,9 @@
       "component---src-pages-page-2-js-19be50868a4c26874b66.js.map"
     ],
     "app": [
-      "app-55c15b0532e0ecebc45d.js",
+      "app-4f89f82330897ecc375a.js",
       "build-js-styles.css",
-      "app-55c15b0532e0ecebc45d.js.map",
+      "app-4f89f82330897ecc375a.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
