@@ -2,9 +2,13 @@
 path: "/hello-world1"
 date: "2018-03-27T13:56:00.962Z"
 title: "My First Gatsby aaaaa"
+tags: ["animals", "Chicago", "zoo"]
 ---
 
-ayyyyyy
+Something About the Chicago Zoo?
 
+What happened there?
 
- and it works when i edit too??
+Who did it?
+
+//Sample post
