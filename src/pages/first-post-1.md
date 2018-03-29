@@ -1,7 +1,7 @@
 ---
-path: "/hello-world1"
+path: "/something-about-chicago"
 date: "2018-03-27T13:56:00.962Z"
-title: "My First Gatsby aaaaa"
+title: "Something About the Chicago Zoo"
 tags: ["animals", "Chicago", "zoo"]
 ---
 
