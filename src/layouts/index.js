@@ -72,6 +72,15 @@ const TemplateWrapper = ({ children }) => (
                   title="Comments or concerns?"
                   description="Please, feel free to email: babak@selformative.com"
                 />
+                <Sidebar
+                  title="The Selformative Email List"
+                  description="Get notified when a new article is published!"
+                >
+                  <form method="POST">
+                    <input type="email" placeholder="email@example.com" />
+                    <input type="submit" value="Join the List"/>
+                  </form>
+                </Sidebar>
               </div>
             </div>
           )

@@ -1,10 +1,11 @@
 import React from 'react';
 
-const Sidebar = (props) => (
+const Sidebar = ({ title, description, children }) => (
   <div
       style={styles.sideBarDiv}
   >
-      <strong>{props.title}</strong> {props.description}
+      <strong>{title}</strong> {description}
+      {children}
   </div>
 );
 
