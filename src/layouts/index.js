@@ -5,6 +5,7 @@ import Media from 'react-media'
 
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
+import EmailListForm from '../components/EmailListForm'
 import './index.css'
 import '../styles/layout-overide.css'
 
@@ -76,10 +77,7 @@ const TemplateWrapper = ({ children }) => (
                   title="The Selformative Email List"
                   description="Get notified when a new article is published!"
                 >
-                  <form method="POST">
-                    <input type="email" placeholder="email@example.com" />
-                    <input type="submit" value="Join the List"/>
-                  </form>
+                  <EmailListForm />
                 </Sidebar>
               </div>
             </div>
