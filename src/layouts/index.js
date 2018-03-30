@@ -12,7 +12,7 @@ import '../styles/layout-overide.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Selformative, The Blog"
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
