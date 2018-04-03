@@ -13,6 +13,12 @@ module.exports = {
       },
     },
     'gatsby-transformer-remark',
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://selformative.us12.list-manage.com/subscribe/post?u=290fa60d77ff0968747ddf2f3&amp;id=1a233a1eec'
+      }
+    }
   ],
   pathPrefix: `/`, // this is for adding the site to github pages
 };

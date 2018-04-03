@@ -5,7 +5,7 @@ import Media from 'react-media'
 
 import Header from '../components/Header'
 import Sidebar from '../components/Sidebar'
-import EmailListForm from '../components/EmailListForm'
+import EmailList from '../components/EmailList'
 import './index.css'
 import '../styles/layout-overide.css'
 
@@ -77,7 +77,7 @@ const TemplateWrapper = ({ children }) => (
                   title="The Selformative Email List"
                   description="Get notified when a new article is published!"
                 >
-                  <EmailListForm />
+                  <EmailList />
                 </Sidebar>
               </div>
             </div>
