@@ -5,48 +5,70 @@
  */
 
  // You can delete this file if you're not using it
-const path = require('path');
-exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
+const path = require("path");
+const _ = require('lodash');
 
-  return new Promise((resolve, reject) => {
-    const blogPostTemplate = path.resolve(`src/templates/blog-post.js`);
-    // Query for markdown nodes to use in creating pages.
-    resolve(
-      graphql(
-        `
-          {
-            allMarkdownRemark(limit: 1000) {
-              edges {
-                node {
-                  frontmatter {
-                    path
-                  }
-                }
-              }
-            }
-          }
-        `
-      ).then(result => {
-        if (result.errors) {
-          reject(result.errors);
-        }
+ exports.createPages = ({ boundActionCreators, graphql }) => {
+   const { createPage } = boundActionCreators;
 
-        // Create pages for each markdown file.
-        result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-          const path = node.frontmatter.path;
-          createPage({
-            path,
-            component: blogPostTemplate,
-            // If you have a layout component at src/layouts/blog-layout.js
-            // In your blog post template's graphql query, you can use path
-            // as a GraphQL variable to query for data from the markdown file.
-            context: {
-              path,
-            },
-          });
-        });
-      })
-    );
-  });
-};
+   const blogPostTemplate = path.resolve("src/templates/blog-post.js");
+   const categoryTemplate = path.resolve("src/templates/categories.js");
+
+   return graphql(`
+     {
+       allMarkdownRemark(
+         sort: { order: DESC, fields: [frontmatter___date] }
+         limit: 2000
+       ) {
+         edges {
+           node {
+             excerpt(pruneLength: 250)
+             html
+             id
+             frontmatter {
+               date
+               path
+               tags
+             }
+           }
+         }
+       }
+     }
+   `).then(result => {
+     if (result.errors) {
+       return Promise.reject(result.errors);
+     }
+
+     const posts = result.data.allMarkdownRemark.edges;
+
+     // Create post detail pages
+     posts.forEach(({ node }) => {
+       createPage({
+         path: node.frontmatter.path,
+         component: blogPostTemplate,
+       });
+     });
+
+     // Category/Tag pages:
+     let tags = [];
+     // Iterate through each post, putting all found tags into `tags`
+     _.each(posts, edge => {
+       if (_.get(edge, "node.frontmatter.tags")) {
+         tags = tags.concat(edge.node.frontmatter.tags);
+       }
+     });
+     // Eliminate duplicate tags
+     tags = _.uniq(tags);
+
+     // Make tag pages
+     tags.forEach(tag => {
+       createPage({
+         path: `/categories/${_.kebabCase(tag)}/`,
+         component: categoryTemplate,
+         context: {
+           tag,
+         },
+       });
+     });
+   });
+ };
