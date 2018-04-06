@@ -28,9 +28,9 @@ return (
             This links to a page that does not yet exist.
             We'll come back to it!
           */}
-    //<Link to="/">All Categories</Link>
+
   </div>
-);
+);//<Link to="/">All Categories</Link>-->
 };
 
 Categories.propTypes = {
