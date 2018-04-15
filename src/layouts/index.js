@@ -9,7 +9,7 @@ import EmailList from '../components/EmailList'
 import './index.css'
 import '../styles/layout-overide.css'
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ data, children }) => (
   <div>
     <Helmet
       title="Selformative, The Blog"
@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
     />
-    <Header />
+    <Header headerImage={data.headerImage} />
     <div
       style={{
         margin: "0 auto",
@@ -93,3 +93,13 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+export const pageQuery = graphql`
+  query HeaderImageQuery {
+    headerImage: imageSharp(id: { regex: "/logo_3/" }) {
+      sizes(maxWidth: 1240 ) {
+        ...GatsbyImageSharpSizes
+      }
+    }
+  }
+  `

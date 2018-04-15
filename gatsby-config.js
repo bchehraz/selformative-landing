@@ -18,7 +18,16 @@ module.exports = {
       options: {
         endpoint: 'https://selformative.us12.list-manage.com/subscribe/post?u=290fa60d77ff0968747ddf2f3&amp;id=1a233a1eec'
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `img`,
+        path: `${__dirname}/src/img/`
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`
   ],
   pathPrefix: `/`, // this is for adding the site to github pages
 };
