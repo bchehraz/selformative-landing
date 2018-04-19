@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
+import NavElement from '../NavElement';
+
 class Nav extends Component {
   constructor(props) {
     super(props);
@@ -19,39 +21,22 @@ class Nav extends Component {
   }
 
   render() {
+    const categories = [
+      { link: '/categories/', name: 'Link 1' },
+      { link: '/categories/', name: 'Link 2' },
+      { link: '/categories/', name: 'Link 3' },
+      { link: '/categories/', name: 'Link 4' },
+      { link: '/categories/', name: 'Link 5' },
+    ]
+
     return (
       <div className="Nav" style={styles.navDiv}>
         <ul style={styles.ul}>
-          <Link
-            to="/categories/"
-          >
-            <li
-              style={ this.state.hover ? styles.liHover : styles.li}
-              onMouseEnter={this.onHover}
-              onMouseLeave={this.offHover}
-            >
-              Link 1
-            </li>
-          </Link>
-          <Link to="/categories/">
-            <li
-              style={ this.state.hover ? styles.liHover : styles.li}
-              onMouseEnter={this.onHover}
-              onMouseLeave={this.offHover}
-            >
-              Link 2
-            </li>
-          </Link>
-          <Link to="/categories/">
-            <li style={styles.li}>
-              Link 3
-            </li>
-          </Link>
-          <Link to="/categories/">
-            <li style={styles.li}>
-              Link 4
-            </li>
-          </Link>
+          {categories.map((category) => (
+            <Link to={category.link}>
+              <NavElement>{category.name}</NavElement>
+            </Link>
+          ))}
         </ul>
       </div>
     );
@@ -60,25 +45,14 @@ class Nav extends Component {
 
 const styles = {
   navDiv: {
-    textAlign: 'center'
+    textAlign: 'center',
   },
   ul: {
-    display: 'block',
-  },
-  liHover: {
-    listStyle: 'none',
-    display: 'inline-block',
-    width: '25%',
-    backgroundColor: 'red',
-    padding: '20px 0'
-  },
-  li: {
-    listStyle: 'none',
-    display: 'inline-block',
-    width: '25%',
-    backgroundColor: 'white',
-    padding: '20px 0'
-  },
+    display: 'flex',
+    flexDirection: 'row',
+    flex: 1,
+    justifyContent: 'space-evenly'
+  }
 }
 
 export default Nav;
