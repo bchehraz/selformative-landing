@@ -4,31 +4,17 @@ import Link from 'gatsby-link';
 import NavElement from '../NavElement';
 
 class Nav extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      hover: false
-    }
-  }
-
-  offHover = () => {
-    this.setState({ hover: false })
-  }
-
-  onHover = () => {
-    this.setState({ hover: true })
-  }
-
-  render() {
+  constructor() {
     const categories = [
       { link: '/categories/', name: 'Link 1' },
       { link: '/categories/', name: 'Link 2' },
       { link: '/categories/', name: 'Link 3' },
       { link: '/categories/', name: 'Link 4' },
       { link: '/categories/', name: 'Link 5' },
-    ]
+    ];
+  }
 
+  render() {
     return (
       <div className="Nav" style={styles.navDiv}>
         <ul style={styles.ul}>
@@ -52,7 +38,7 @@ const styles = {
     flexDirection: 'row',
     flex: 1,
     justifyContent: 'space-evenly'
-  }
+  },
 }
 
 export default Nav;
