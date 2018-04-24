@@ -1,49 +1,73 @@
 {
   "assetsByChunkName": {
+    "component---src-templates-categories-js": [
+      "component---src-templates-categories-js-5a48f964388ef4b8d15e.js",
+      "component---src-templates-categories-js-5a48f964388ef4b8d15e.js.map"
+    ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-99524c70c3cc12eb9af6.js",
-      "component---src-pages-index-js-99524c70c3cc12eb9af6.js.map"
+      "component---src-pages-index-js-58bb5fbd7e8fddf8c65d.js",
+      "component---src-pages-index-js-58bb5fbd7e8fddf8c65d.js.map"
     ],
     "path---": [
-      "path----557518bd178906f8d58a.js",
-      "path----557518bd178906f8d58a.js.map"
+      "path----18696257e9b12248deee.js",
+      "path----18696257e9b12248deee.js.map"
+    ],
+    "path---categories-zoo": [
+      "path---categories-zoo-404f6d3d577ec24745cd.js",
+      "path---categories-zoo-404f6d3d577ec24745cd.js.map"
+    ],
+    "path---categories-chicago": [
+      "path---categories-chicago-adf3b5f169d92639b258.js",
+      "path---categories-chicago-adf3b5f169d92639b258.js.map"
     ],
     "path---something-about-chicago": [
-      "path---something-about-chicago-c391758349e3f18cc5a4.js",
-      "path---something-about-chicago-c391758349e3f18cc5a4.js.map"
+      "path---something-about-chicago-13439f231b0ce875a932.js",
+      "path---something-about-chicago-13439f231b0ce875a932.js.map"
     ],
     "component---src-templates-blog-post-js": [
       "component---src-templates-blog-post-js-28905f2c851f1e6cfd7e.js",
       "component---src-templates-blog-post-js-28905f2c851f1e6cfd7e.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-a18927bfe6402ac2d09f.js",
-      "component---src-layouts-index-js-a18927bfe6402ac2d09f.js.map"
+      "component---src-layouts-index-js-99b1996cf201615ff837.js",
+      "component---src-layouts-index-js-99b1996cf201615ff837.js.map"
+    ],
+    "path---landing": [
+      "path---landing-a0e39f21c11f6a62c5ab.js",
+      "path---landing-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---page-2": [
       "path---page-2-a0e39f21c11f6a62c5ab.js",
       "path---page-2-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---how-to-learn-a-new-skill": [
-      "path---how-to-learn-a-new-skill-a31f044afa8e5cc4bdd4.js",
-      "path---how-to-learn-a-new-skill-a31f044afa8e5cc4bdd4.js.map"
+      "path---how-to-learn-a-new-skill-ef36455083fe3bb08efe.js",
+      "path---how-to-learn-a-new-skill-ef36455083fe3bb08efe.js.map"
     ],
     "path---index": [
       "path---index-2e265e599e132e27859e.js",
       "path---index-2e265e599e132e27859e.js.map"
     ],
     "path---hello-world": [
-      "path---hello-world-e708a99ccdc3e2e575d0.js",
-      "path---hello-world-e708a99ccdc3e2e575d0.js.map"
+      "path---hello-world-b641ffe50d2f93bb8324.js",
+      "path---hello-world-b641ffe50d2f93bb8324.js.map"
+    ],
+    "path---categories-animals": [
+      "path---categories-animals-d33875af80abb2e1a7b3.js",
+      "path---categories-animals-d33875af80abb2e1a7b3.js.map"
+    ],
+    "component---src-pages-landing-js": [
+      "component---src-pages-landing-js-889702a9c26bb56108e3.js",
+      "component---src-pages-landing-js-889702a9c26bb56108e3.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
     ],
     "commons": [
-      "commons-37e7ec241aad23eaba66.js",
+      "commons-480ab81d4c9d9b68eedb.js",
       "build-js-styles.css",
-      "commons-37e7ec241aad23eaba66.js.map",
+      "commons-480ab81d4c9d9b68eedb.js.map",
       "build-js-styles.css.map"
     ],
     "path---404-html": [
@@ -51,13 +75,13 @@
       "path---404-html-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-page-2-js": [
-      "component---src-pages-page-2-js-19be50868a4c26874b66.js",
-      "component---src-pages-page-2-js-19be50868a4c26874b66.js.map"
+      "component---src-pages-page-2-js-029b189dcf09d2310346.js",
+      "component---src-pages-page-2-js-029b189dcf09d2310346.js.map"
     ],
     "app": [
-      "app-dd150960548d5e114793.js",
+      "app-97e112403e63857aef54.js",
       "build-js-styles.css",
-      "app-dd150960548d5e114793.js.map",
+      "app-97e112403e63857aef54.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [

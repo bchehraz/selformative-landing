@@ -1,0 +1,2 @@
+webpackJsonp([0x8c68e41d6ed8],{217:function(e,t,n){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var u=n(1),a=l(u),d=function(e){e.data;return a.default.createElement("div",null,a.default.createElement("h1",null,"Hi from the landing.js file. This is one the second branch only."))};t.default=d,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-landing-js-889702a9c26bb56108e3.js.map
