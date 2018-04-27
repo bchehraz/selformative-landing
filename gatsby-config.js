@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Selformative, The Blog',
+    title: 'Selformative, Improve Yourself',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
