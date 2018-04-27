@@ -3,8 +3,8 @@ Selformative- Main CSS Styles.
 This file is overriding the defaults set in the layouts directory
 ***/
 
-* {
-    background: #f5f5f5;
+body {
+    background: #233D4D;
     color: black;
 }
 html {
@@ -27,26 +27,6 @@ p, div {
 
   Header
 */
-
-/*.HeaderLogo {
-  display: block;
-}
-
-.Nav {
-
-}
-
-.Nav ul {
-  display: block;
-  border: 2px solid black;
-}
-
-.Nav ul li {
-  list-style: none;
-  display: inline-block;
-  border: 1px solid black;
-  width:
-}*/
 
 /*
   /Header

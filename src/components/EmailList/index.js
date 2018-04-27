@@ -11,7 +11,7 @@ class EmailList extends Component {
       email: '',
       submitted: false,
       success: false,
-      successMessage: 'Thank you! :)',
+      successMessage: '=> Thank you! :) <= Redirecting',
       error: false,
       errorMessage: 'Error: Invalid email or already on the list',
     };
@@ -50,15 +50,24 @@ class EmailList extends Component {
       <div>
         <form
           onSubmit={this.handleSubmit}
-          style={(success ? styles.emailListSuccess : styles.emailList)}
+          style={(success ? styles.containerSuccess : styles.container)}
         >
-          <input
-            type="email"
-            value={email}
-            placeholder="Enter your email here"
-            onChange={this.onTextChange}
-          />
-          <input type="submit" value="Join the List"/>
+          <div style={styles.emailInputDiv}>
+            <label>Email Address:</label>
+            <input
+              type="email"
+              value={email}
+              onChange={this.onTextChange}
+              style={styles.emailInput}
+            />
+          </div>
+          <div style={styles.buttonDiv}>
+            <input
+              type="submit"
+              value="Join the List"
+              style={styles.buttonStyle}
+            />
+          </div>
         </form>
         <h4>{(success ? successMessage : "")}</h4>
         <h4>{(error ? errorMessage : "")}</h4>
@@ -68,10 +77,34 @@ class EmailList extends Component {
 }
 
 const styles = {
-  emailList: {
+  container: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    alignContent: 'center',
+    flexFlow: 'row wrap',
   },
-  emailListSuccess: {
-    display: 'none'
+  containerSuccess: {
+    display: 'none',
+  },
+  emailInputDiv: {
+    flex: '2',
+    display: 'flex',
+    flexDirection: 'column',
+    textAlign: 'left',
+  },
+  emailInput: {
+    padding: '10px',
+    width: '100%',
+  },
+  buttonDiv: {
+    flex: '1',
+  },
+  buttonStyle: {
+    padding: '10px',
+    backgroundColor: '#77BFA3',
+    color: 'white',
   }
 }
 

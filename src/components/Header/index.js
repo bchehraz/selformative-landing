@@ -3,32 +3,54 @@ import Link from 'gatsby-link'
 import Img from 'gatsby-image';
 
 import Nav from '../Nav';
+import EmailList from '../EmailList';
 
 const Header = (props) => (
   <div
     style={{
-      background: '#f5f5f5',
-      marginBottom: '3rem',
-      borderBottom: '2px solid #e6e6e6',
+      //background: '#030301',
+      marginBottom: '2rem',
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        maxWidth: 980,
+        maxWidth: '100%',
         padding: '1.45rem 1.0875rem',
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        display: 'flex',
+        flexDirection: 'row',
+        background: 'white',
       }}
     >
-      <Img
-        className="HeaderLogo"
-        title="Header Image"
-        alt="selformative logo"
-        sizes={props.headerImage.sizes}
-      />
-      <Nav />
+      <div>
+        <Img
+          className="HeaderLogo"
+          title="Header Image"
+          alt="selformative logo"
+          sizes={props.headerImage.sizes}
+          style={{
+            // display: 'flex',
+            // flex: 2,
+            maxWidth: 400,
+            width: 200,
+            margin: 'auto',
+          }}
+        />
+      </div>
     </div>
   </div>
 );
+
+const styles = {
+  navStyle: {
+    textAlign: 'center',
+    display: 'flex',
+    flex: 1,
+    margin: 'auto',
+  }
+}
 
 /*
 

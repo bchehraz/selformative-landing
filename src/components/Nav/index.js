@@ -4,21 +4,25 @@ import Link from 'gatsby-link';
 import NavElement from '../NavElement';
 
 class Nav extends Component {
-  constructor() {
-    const categories = [
-      { link: '/categories/', name: 'Link 1' },
-      { link: '/categories/', name: 'Link 2' },
-      { link: '/categories/', name: 'Link 3' },
-      { link: '/categories/', name: 'Link 4' },
-      { link: '/categories/', name: 'Link 5' },
-    ];
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      categories: [
+        { link: '/categories/', name: 'Link 1' },
+        { link: '/categories/', name: 'Link 2' },
+        { link: '/categories/', name: 'Link 3' },
+        { link: '/categories/', name: 'Link 4' },
+        { link: '/categories/', name: 'Link 5' },
+      ]
+    };
   }
 
-  render() {
+  render(props) {
     return (
-      <div className="Nav" style={styles.navDiv}>
+      <div className="Nav" style={this.props.style}>
         <ul style={styles.ul}>
-          {categories.map((category) => (
+          {this.state.categories.map((category) => (
             <Link to={category.link}>
               <NavElement>{category.name}</NavElement>
             </Link>
@@ -30,15 +34,17 @@ class Nav extends Component {
 }
 
 const styles = {
-  navDiv: {
-    textAlign: 'center',
-  },
+  /*ul: {
+    display: 'block',
+    flexDirection: 'row',
+    flex: 3,
+    justifyContent: 'space-evenly'
+  },*/
   ul: {
     display: 'flex',
     flexDirection: 'row',
-    flex: 1,
-    justifyContent: 'space-evenly'
-  },
+    justifyContent: 'space-evenly',
+  }
 }
 
 export default Nav;

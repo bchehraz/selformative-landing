@@ -35,12 +35,14 @@ const styles = {
   liHover: {
     listStyle: 'none',
     backgroundColor: 'red',
-    padding: '20px',
+    padding: '10px 20px',
+    margin: 'auto',
   },
   li: {
     listStyle: 'none',
     backgroundColor: 'white',
-    padding: '20px',
+    padding: '10px 20px',
+    margin: 'auto',
   },
 }
 
