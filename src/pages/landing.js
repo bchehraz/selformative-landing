@@ -2,16 +2,7 @@ import React, { Component } from 'react'
 
 import EmailList from '../components/EmailList';
 
-class LandingPage extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = { section: 0 }
-  }
-
-  goNext = () => {
-    this.setState({ section: this.state.section + 1 });
-  }
+class Landing extends Component {
 
   render() {
     return (
@@ -33,7 +24,6 @@ const styles = {
     textAlign: 'center',
     maxWidth: '100%',
     margin: '0 auto',
-    overflow: 'hidden'
   },
   emailFormContainer: {
     padding: '10',
@@ -45,4 +35,4 @@ const styles = {
   }
 }
 
-export default LandingPage;
+export default Landing;

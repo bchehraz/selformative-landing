@@ -3,15 +3,13 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import '../styles/blog-listing.css';
 
+import Landing from './landing.js'
+
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
 
   return (
-    <div className="blog-posts">
-      <div>
-        <h1>Hi from the home page</h1>
-      </div>
-    </div>
+    <Landing />
   );
 }
 
