@@ -5,12 +5,12 @@
       "component---src-templates-categories-js-5a48f964388ef4b8d15e.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-ec9d0bb3acf3b879417d.js",
-      "component---src-pages-index-js-ec9d0bb3acf3b879417d.js.map"
+      "component---src-pages-index-js-59b63a32b222cc312225.js",
+      "component---src-pages-index-js-59b63a32b222cc312225.js.map"
     ],
     "path---": [
-      "path----d837bbca0a6f39e3d112.js",
-      "path----d837bbca0a6f39e3d112.js.map"
+      "path----e0ddb02475d39b590c60.js",
+      "path----e0ddb02475d39b590c60.js.map"
     ],
     "path---categories-zoo": [
       "path---categories-zoo-404f6d3d577ec24745cd.js",
@@ -29,8 +29,8 @@
       "component---src-templates-blog-post-js-28905f2c851f1e6cfd7e.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-620a151ca94f363b37e0.js",
-      "component---src-layouts-index-js-620a151ca94f363b37e0.js.map"
+      "component---src-layouts-index-js-96fb411f02259f84bca5.js",
+      "component---src-layouts-index-js-96fb411f02259f84bca5.js.map"
     ],
     "path---landing": [
       "path---landing-a0e39f21c11f6a62c5ab.js",
@@ -57,8 +57,8 @@
       "path---categories-animals-d33875af80abb2e1a7b3.js.map"
     ],
     "component---src-pages-landing-js": [
-      "component---src-pages-landing-js-9580b0c3ba7516eeba31.js",
-      "component---src-pages-landing-js-9580b0c3ba7516eeba31.js.map"
+      "component---src-pages-landing-js-c515b0e7bc670dde39f1.js",
+      "component---src-pages-landing-js-c515b0e7bc670dde39f1.js.map"
     ],
     "component---src-pages-404-js": [
       "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
@@ -79,9 +79,9 @@
       "component---src-pages-page-2-js-029b189dcf09d2310346.js.map"
     ],
     "app": [
-      "app-97e112403e63857aef54.js",
+      "app-08ee96ccf2360133a721.js",
       "build-js-styles.css",
-      "app-97e112403e63857aef54.js.map",
+      "app-08ee96ccf2360133a721.js.map",
       "build-js-styles.css.map"
     ],
     "path---404": [
