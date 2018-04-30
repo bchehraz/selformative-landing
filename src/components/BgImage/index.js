@@ -19,13 +19,13 @@ import Img from 'gatsby-image';
 
 const BgImage = (props) => (
     <Img
-      sizes={props.bgImg.sizes}
+      sizes={props.image.sizes}
       style={{
         position: 'absolute',
         left: 0,
         top: 0,
+        height: '100vh',
         width: '100%',
-        height: '100%',
         zIndex: '-1',
       }}
     />

@@ -11,7 +11,7 @@ class EmailList extends Component {
       email: '',
       submitted: false,
       success: false,
-      successMessage: '=> Thank you! :) <= Redirecting',
+      successMessage: 'Thank you! :)',
       error: false,
       errorMessage: 'Error: Invalid email or already on the list',
     };
@@ -55,16 +55,17 @@ class EmailList extends Component {
           <div style={styles.emailInputDiv}>
             <label>Email Address:</label>
             <input
+              style={styles.emailInput}
               type="email"
               value={email}
               onChange={this.onTextChange}
-              style={styles.emailInput}
+              placeholder="youremail@email.com"
             />
           </div>
           <div style={styles.buttonDiv}>
             <input
               type="submit"
-              value="Join the List"
+              value="Join Selformative's Mailing List"
               style={styles.buttonStyle}
             />
           </div>
@@ -79,17 +80,16 @@ class EmailList extends Component {
 const styles = {
   container: {
     display: 'flex',
-    flexDirection: 'row',
+    flexDirection: 'column',
     justifyContent: 'space-around',
-    alignItems: 'center',
     alignContent: 'center',
-    flexFlow: 'row wrap',
+    //flexFlow: 'row wrap',
   },
   containerSuccess: {
     display: 'none',
   },
   emailInputDiv: {
-    flex: '2',
+    flex: '1',
     display: 'flex',
     flexDirection: 'column',
     textAlign: 'left',
@@ -103,6 +103,7 @@ const styles = {
   },
   buttonStyle: {
     padding: '10px',
+    width: '100%',
     backgroundColor: '#77BFA3',
     color: 'white',
   }

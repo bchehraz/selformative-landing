@@ -30,7 +30,7 @@ const TemplateWrapper = ({ data, children }) => (
         }}
       >
         <div style={{ flex: 2.5, paddingRight: "30px" }}>
-        <BgImage bgImg={data.bgImg} />
+        <BgImage image={data.bgImg} />
           {children()}
         </div>
       </div>
@@ -54,7 +54,7 @@ export const pageQuery = graphql`
 
     # Get background image
     bgImg: imageSharp(id: { regex: "/bg/" }) {
-      sizes(maxWidth: 1240 ) {
+      sizes(maxWidth: 2000 ) {
         ...GatsbyImageSharpSizes
       }
     }
