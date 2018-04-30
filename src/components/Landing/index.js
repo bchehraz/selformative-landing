@@ -7,7 +7,7 @@ import BgImage from '../BgImage';
 class Landing extends Component {
   render() {
     const welcomeMessage = 'Under Construction';
-    const subText = 'In the meantime, Check out this recent JRE talk on health with Dr. Peter Atia'
+    const subText = 'In the meantime, check out the recent JRE talk on health with Dr. Peter Atia'
 
     return (
       <div style={styles.container}>
