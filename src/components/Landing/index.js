@@ -7,19 +7,19 @@ import BgImage from '../BgImage';
 class Landing extends Component {
   render() {
     const welcomeMessage = 'Under Construction';
-    const subText = 'In the meantime, check out the recent JRE talk on health with Dr. Peter Atia'
+    const subText = 'In the meantime, check out this important talk at Google regarding how important sleep is!'
 
     return (
       <div style={styles.container}>
         <h1 style={{color: 'white'}}>
           {welcomeMessage}
         </h1>
-        <h2 style={styles.subTextStyle}>{subText}</h2>
-        <iframe src="http://www.youtube.com/embed/gP1NA5f4LfE"
+        <p style={styles.subTextStyle}>{subText}</p>
+        <iframe src="http://www.youtube.com/embed/aXflBZXAucQ"
     width="560" height="315" frameborder="0"
         style={styles.iframeStyle}></iframe>
         <div style={styles.emailFormContainer}>
-          <h1>{'Ready to Make a Change?'}</h1>
+          <h1>{'Join the Solution'}</h1>
           <EmailList />
         </div>
       </div>
