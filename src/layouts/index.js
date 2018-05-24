@@ -17,23 +17,17 @@ const TemplateWrapper = ({ data, children }) => (
         { name: "keywords", content: "sample, something" }
       ]}
     />
-    <Header headerImage={data.headerImage} />
-
-      <div
-        style={{
-          margin: "0 auto",
-          maxWidth: 980,
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "space-between",
-          height: "100%"
-        }}
-      >
-        <div style={{ flex: 2.5, paddingRight: "30px" }}>
-        <BgImage image={data.bgImg} />
-          {children()}
+    <div>
+      <div> {/*This is the div that will, at some point, hide when the menu button is pressed*/}
+        <Header headerImage={data.headerImage} /> {/*This header will be explicitely defined in Wrapper, potentially*/}
+        <div> {/*This is the content div. Contains all the content including the background image*/}
+          <div style={{ flex: 2.5, paddingRight: "30px" }}>
+            <BgImage image={data.bgImg} />
+            {children()}
+          </div>
         </div>
       </div>
+    </div>
   </div>
 );
 

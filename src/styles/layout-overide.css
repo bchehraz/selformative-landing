@@ -2,6 +2,7 @@
 Selformative- Main CSS Styles.
 This file is overriding the defaults set in the layouts directory
 ***/
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
 
 body {
     background: #233D4D;
@@ -22,8 +23,13 @@ p, div {
     font-size: 16px;
 }
 
-input:focus {
+input:focus, button {
   outline-width: 0;
+}
+
+button:focus, button:active {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
 }
 /*
   /Something
