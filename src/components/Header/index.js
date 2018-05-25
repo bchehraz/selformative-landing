@@ -50,6 +50,7 @@ class Header extends React.Component {
           <MenuButton
             handleMouseDown={this.handleMouseDown}
             style={{ flex: 1, textAlign: 'right' }}
+            menuVisibility={this.state.visible}
           />
           <Menu handleMouseDown={this.handleMouseDown} menuVisibility={this.state.visible} />
 

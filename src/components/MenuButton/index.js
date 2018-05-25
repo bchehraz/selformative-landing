@@ -3,6 +3,12 @@ import Link from 'gatsby-link';
 
 class MenuButton extends Component {
 
+  constructor(props) {
+    super(props);
+
+    this.state = { visible: props.menuVisibility }
+  }
+
   render() {
     return (
       /*<menu>
@@ -12,8 +18,8 @@ class MenuButton extends Component {
         <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
       </menu>*/
       <div style={this.props.style}>
-        <button style={styles.buttonStyle} onMouseDown={this.props.handleMouseDown}>
-          MENU
+        <button style={(this.props.menuVisibility) ? { ...styles.buttonStyle, ...styles.buttonStyleOpen } : styles.buttonStyle} onMouseDown={this.props.handleMouseDown}>
+          {"MENU"}
         </button>
       </div>
     );
@@ -24,13 +30,18 @@ const styles = {
   buttonStyle: {
     color: '#64a3d1',
     background: 'inherit',
-    borderColor: '#64a3d1',
     padding: '10px 5px',
     borderRadius: '7px',
-    borderWidth: '1px',
     outline: 'none',
     fontFamily: 'Quicksand, sans-serif', //this is Google-imported,
     fontWeight: 'none',
+    border: '1px solid #64a3d1',
+  },
+  buttonStyleOpen: {
+    backgroundColor: '#000',
+    opacity: 0.5,
+    color: 'white',
+    border: '1px solid white',
   }
 }
 
