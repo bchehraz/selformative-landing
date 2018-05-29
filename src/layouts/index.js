@@ -58,33 +58,14 @@ const TemplateWrapper = ({ data, children }) => (
                     padding: "25px"
                   }}
                 >
-                  <div style={{ flex: 2.5, paddingRight: "30px" }}>
-                    <BgImage image={data.bgImg} />
-                    {children()}
+                
+                <div style={{ flex: 2.5, paddingRight: "30px" }}>
+                  <BgImage image={data.bgImg} />
+                  {children()}
                   </div>
-                  <div style={{ flex: 1 }}>
-                <Sidebar
-                  title="Selformative"
-                  description="Articles on Everything Self Improvement: from health to science and technology. I hope that at the end of each article you walk away feeling like you accomplished something. Enjoy. All articles are written by Me."
-                />
-                <Sidebar
-                  title="About Author"
-                  description="My name is Babak and I am a Full-stack Developer specializing in React and React Native based in Fresno, California."
-                />
-                <Sidebar
-                  title="Comments or concerns?"
-                  description="Please, feel free to email: babak@selformative.com"
-                />
-                <Sidebar
-                  title="The Selformative Email List"
-                  description="Get notified when a new article is published!"
-                >
-                  <EmailList />
-                </Sidebar>
-              </div>
-            </div>
-          )
-        }
+                </div>
+              )
+            }
           </Media>
         </div>
       </div>
