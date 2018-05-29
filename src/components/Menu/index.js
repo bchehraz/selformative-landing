@@ -15,7 +15,7 @@ class Menu extends Component {
     this.generateLink = this.generateLink.bind(this);
   }
 
-  //
+  // This will generate Nav menu link
   generateLink(title = "NoName", path = "/", Icon) {
     return (
       <Link style={styles.menuLink} to={path}>
