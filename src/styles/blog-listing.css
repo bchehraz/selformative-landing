@@ -12,3 +12,10 @@ h2 {
     font-size: 0.8rem !important;
     font-weight: 100 !important;
 }
+
+/**
+* Individual Blog Post Page Style
+*/
+.blog-post-container {
+  background-color: #333;
+}
