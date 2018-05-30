@@ -11,8 +11,6 @@ export default function Index({ data }) {
       {posts
         .filter(post => post.node.frontmatter.title.length > 0)
         .map(({ node: post }, index) => {
-          console.log(index);
-
           //The most recent blog post is shown larger than the rest
           if (index === 0) {
             return (
