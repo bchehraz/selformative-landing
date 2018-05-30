@@ -3,6 +3,8 @@ div.blog-post-preview {
     padding-top: 1rem;
     padding-bottom: 1rem;
     margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
 }
 h1 > * {
     font-size: 1.2rem;
@@ -17,5 +19,6 @@ h2 {
 * Individual Blog Post Page Style
 */
 .blog-post-container {
-  background-color: #333;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 20px;
 }
