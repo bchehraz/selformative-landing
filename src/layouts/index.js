@@ -42,8 +42,8 @@ const TemplateWrapper = ({ data, children }) => (
                   }}
                 >
                   <div style={{ flex: 1 }}>
-                  <BgImage image={data.bgImg} />
-                    {children()}
+                    <BgImage image={data.bgImg} />
+                      {children()}
                   </div>
                 </div>
               ) : (
@@ -58,7 +58,6 @@ const TemplateWrapper = ({ data, children }) => (
                     padding: "25px"
                   }}
                 >
-                
                 <div style={{ flex: 2.5, paddingRight: "30px" }}>
                   <BgImage image={data.bgImg} />
                   {children()}
