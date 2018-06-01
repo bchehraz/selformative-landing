@@ -3,6 +3,8 @@ import Link from "gatsby-link";
 import Helmet from "react-helmet";
 import '../styles/blog-listing.css';
 
+import Video from '../components/Video';
+
 export default function Index({ data }) {
   const { edges: posts } = data.allMarkdownRemark;
 
@@ -19,8 +21,7 @@ export default function Index({ data }) {
                   <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
                 </h1>
                 <h2>{post.frontmatter.date}</h2>
-                <iframe src={post.frontmatter.src}
-            width="560" height="315" frameborder="0"></iframe>
+                <Video src={post.frontmatter.src} />
               </div>
             );
           } else {
