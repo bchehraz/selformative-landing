@@ -14,7 +14,7 @@ export default function Index({ data }) {
           //The most recent blog post is shown larger than the rest
           if (index === 0) {
             return (
-              <div className="blog-post-preview" key={post.id}>
+              <div className="blog-post-preview-main" key={post.id}>
                 <h1>
                   <Link to={post.frontmatter.path}>{post.frontmatter.title}</Link>
                 </h1>
