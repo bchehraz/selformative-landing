@@ -19,7 +19,6 @@ class Landing extends Component {
     width="560" height="315" frameborder="0"
         style={styles.iframeStyle}></iframe>
         <div style={styles.emailFormContainer}>
-          <h1>{'Join the Solution'}</h1>
           <EmailList />
         </div>
       </div>
