@@ -15,13 +15,15 @@ const Header = (props) => (
     <div
       style={{
         margin: '0 auto',
-        maxWidth: '100%',
-        padding: '1.45rem 1.0875rem',
+        width: '75%',
+        maxWidth: '400px',
+        padding: '1rem 1.0875rem',
         alignItems: 'center',
         justifyContent: 'space-around',
         display: 'flex',
         flexDirection: 'row',
-        background: 'white',
+        background: 'rgba(255, 255, 255, 0.9)',
+        borderRadius: '0 0 25px 25px',
       }}
     >
       <div>
