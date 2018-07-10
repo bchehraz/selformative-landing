@@ -11,15 +11,11 @@ class Landing extends Component {
 
     return (
       <div style={styles.container}>
+        <div style={styles.headingContainer}>
         <h1 style={{color: 'white'}}>
           {welcomeMessage}
         </h1>
         <p style={styles.subTextStyle}>{subText}</p>
-        <iframe src="http://www.youtube.com/embed/aXflBZXAucQ"
-    width="560" height="315" frameborder="0"
-        style={styles.iframeStyle}></iframe>
-        <div style={styles.emailFormContainer}>
-          <EmailList />
         </div>
       </div>
     );
