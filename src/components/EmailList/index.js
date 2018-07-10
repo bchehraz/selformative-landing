@@ -11,7 +11,7 @@ class EmailList extends Component {
       email: '',
       submitted: false,
       success: false,
-      successMessage: 'Thank you! :)',
+      successMessage: '',
       error: false,
       errorMessage: 'Error: Invalid email or already on the list',
     };
