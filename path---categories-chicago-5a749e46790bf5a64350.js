@@ -1,0 +1,2 @@
+webpackJsonp([71761480197334],{288:function(t,e){t.exports={data:{allMarkdownRemark:{edges:[{node:{excerpt:"Something About the Chicago Zoo? What happened there? Who did it? //Sample post",id:"/Users/bchehraz/Projects/selformative-landing/src/pages/first-post-1.md absPath of file >>> MarkdownRemark",frontmatter:{title:"Something About the Chicago Zoo",date:"March 27, 2018",path:"/something-about-chicago"}}}]}},pathContext:{tag:"Chicago"}}}});
+//# sourceMappingURL=path---categories-chicago-5a749e46790bf5a64350.js.map
