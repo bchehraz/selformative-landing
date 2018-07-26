@@ -9,24 +9,27 @@ const Header = (props) => (
   <div
     style={{
       //background: '#030301',
-      marginBottom: '2rem',
+      margin: '0 auto',
+      marginBottom: '1rem',
     }}
   >
     <div
       style={{
         margin: '0 auto',
-        width: '75%',
-        maxWidth: '400px',
+        width: '100%',
+        maxWidth: '700px',
         padding: '1rem 1.0875rem',
-        alignItems: 'center',
-        justifyContent: 'space-around',
         display: 'flex',
-        flexDirection: 'row',
-        background: 'rgba(255, 255, 255, 0.9)',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        flexWrap: 'wrap',
+        background: 'rgba(0, 0, 0, 0)',
         borderRadius: '0 0 25px 25px',
+        fontFamily: 'Montserrat, sans-serif',
       }}
     >
-      <div>
+      <div style={{flex: 1}}>
         <Img
           className="HeaderLogo"
           title="Header Image"
@@ -40,6 +43,9 @@ const Header = (props) => (
             margin: 'auto',
           }}
         />
+      </div>
+      <div style={{flex: 1, margin: '0 auto', padding: '0', textAlign: 'center', minWidth: '200px',}}>
+      {'Power to the Individual'}
       </div>
     </div>
   </div>

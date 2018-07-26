@@ -17,7 +17,9 @@ import Img from 'gatsby-image';
 //   }
 // `;
 
-const BgImage = (props) => (
+const BgImage = (props) => {
+  console.log(props.image.sizes)
+  return (
     <Img
       sizes={props.image.sizes}
       style={{
@@ -27,8 +29,12 @@ const BgImage = (props) => (
         height: '100vh',
         width: '100%',
         zIndex: '-1',
+        ...props.style,
+        border: '0 solid rgba(255, 255, 255, 1)',
+        width: '100%',
       }}
     />
-);
+  )
+}
 
 export default BgImage;

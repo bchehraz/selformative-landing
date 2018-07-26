@@ -27,7 +27,8 @@ module.exports = {
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-next`
   ],
   pathPrefix: `/`, // this is for adding the site to github pages
 };

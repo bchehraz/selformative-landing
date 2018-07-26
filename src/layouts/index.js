@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Media from 'react-media'
 
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 import BgImage from '../components/BgImage';
 import './index.css'
 import '../styles/layout-overide.css'
@@ -22,23 +23,34 @@ const TemplateWrapper = ({ data, children }) => (
       <div
         style={{
           margin: "0 auto",
-          maxWidth: 980,
+          width: '95vw',
+          maxWidth: '700px',
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
-          height: "100%"
+          justifyContent: "flex-end",
+          height: "100%",
+          fontFamily: 'Montserrat, sans-serif',
         }}
       >
-        <div style={{ flex: 2.5, paddingRight: "30px" }}>
-        <BgImage image={data.bgImg} />
+        <div style={{ flex: 1, paddingRight: "0px" }}>
+          <BgImage image={data.bgImg} style={styles.bg} />
           {children()}
+
+          <Footer />
         </div>
       </div>
+
   </div>
 );
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,
+}
+
+const styles = {
+  bg: {
+    position: 'fixed',
+  }
 }
 
 export default TemplateWrapper
@@ -53,7 +65,7 @@ export const pageQuery = graphql`
     }
 
     # Get background image
-    bgImg: imageSharp(id: { regex: "/bg/" }) {
+    bgImg: imageSharp(id: { regex: "/bg7/" }) {
       sizes(maxWidth: 2000 ) {
         ...GatsbyImageSharpSizes
       }
